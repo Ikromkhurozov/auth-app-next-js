@@ -1,0 +1,155 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff4ee;
+  padding-bottom: 50px;
+
+  .navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+
+    h1{
+      font-size: 25px;
+      line-height: 27px;
+      margin: 30px 0;
+      color: #333;
+
+      @media (max-width: 576px) {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+
+    .profile{
+      padding: 15px 40px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      background-color: #5EC576;
+      border-radius: 50px;
+      text-decoration: none;
+      color: #111;
+
+      @media (max-width: 576px) {
+        padding: 8px 20px;
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .form{
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 30px 100px 30px;
+
+    @media(max-width: 650px){
+      padding: 15px 20px;
+    }
+    @media(max-width: 480px){
+      padding: 20px 10px;
+    }
+
+    h3{
+      font-size: 25px;
+      line-height: 27px;
+      font-weight: 400;
+      font-style: oblique;
+      text-align: center;
+
+      @media(max-width: 576px){
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+
+    .input-wrapper {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        color: #545d5c;
+        margin-bottom: 0.5rem;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+
+      input {
+        outline: none;
+        padding-left: 0.5rem;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #2d2756;
+        width: 400px;
+        height: 45px;
+        border: 1px solid #e1e3eb;
+        border-radius: 8px;
+
+        &:focus {
+          border-color: #25d3c2;
+        }
+
+        @media (max-width: 480px) {
+          width: 285px;
+        }
+
+      }
+    }
+
+    .phone-wrapper{
+      label{
+        color: #545d5c;
+        margin-bottom: 0.5rem;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+
+    .error{
+      font-size: 15px;
+      color: red;
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button{
+        height: 45px;
+        width: 60%;
+        border: none;
+        outline: none;
+        font-size: 17px;
+        line-height: 19px;
+        font-weight: 400;
+        background-color: #5EC576;
+        border-radius: 50px;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+
+        @media(max-width: 576px){
+          height: 40px;
+          font-size: 15px;
+          line-height: 17px;
+          font-weight: 400;
+         }
+      }
+    }
+  }
+}
+
+

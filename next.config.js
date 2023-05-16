@@ -1,4 +1,21 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = nextConfig
+// next.config.js
+
+module.exports = {
+  images: {
+    domains: ["images.dog.ceo"],
+  },
+};
+
+module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/registration',
+        permanent: true,
+      },
+    ]
+  },
+}

@@ -1,0 +1,23 @@
+
+.phone-wrapper{
+
+  input {
+    border: 1px solid #e1e3eb;
+    height: 45px;
+    border-radius: 8px;
+    width: 400px;
+    font-size: 18px;
+    padding: 0 0 0 .5rem;
+    background-color: #fff;
+    color: #2d2756;
+
+    @media (max-width: 480px) {
+      width: 285px;
+    }
+
+    &:focus {
+      border-color: #25d3c2;
+      outline: none;
+    }
+  }
+}

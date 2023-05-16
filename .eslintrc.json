@@ -1,3 +1,27 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["next","next/core-web-vitals"],
+
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "jsx-a11y/href-no-hash": [0],
+    "jsx-a11y/aria-props": [0],
+    "jsx-a11y/role-has-required-aria-props": [0],
+    "default-case": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "arrow-parens": [1, "as-needed"],
+    "no-empty-function": "off"
+  }
 }
